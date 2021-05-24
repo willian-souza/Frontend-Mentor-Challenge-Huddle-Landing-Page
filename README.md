@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://www.frontendmentor.io/solutions/responsive-layout-using-css-grid-and-flexbox-tlfL8KoPD)
-- [Live Site URL](https://willian-souza.github.io/Frontend-Mentor-Challenge-Single-Price-Grid/)
+- [Solution URL](https://www.frontendmentor.io/solutions/responsive-layout-using-css-grid-and-flexbox-JOhTWqzxB)
+- [Live Site URL](https://willian-souza.github.io/Frontend-Mentor-Challenge-Huddle-Landing-Page/)
 ---
 # 🖥 Built with
 
