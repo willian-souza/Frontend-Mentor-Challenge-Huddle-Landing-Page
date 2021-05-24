@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+}
+
+.container{
+    max-width: 1080px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+     "main main"
+     "footer footer";
+}
+
+header{
+    grid-area: header;
+}
+
+header img{
+    max-width: 200px;
+}
+
+main{
+    grid-area: main;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+main .mockup img{
+    max-width: 90%;
+}
+
+main h1{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
+}
+
+main p{
+    font-family: 'Open Sans', sans-serif;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+main .register button{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(257, 40%, 49%);
+    font-weight: 400;
+    padding: 15px;
+    margin-top: 20px;
+    width: 40%;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-box-shadow: 2px 2px 16px -4px #000000; 
+    box-shadow: 2px 2px 16px -4px #000000;
+}
+
+main .register button:hover{
+    color: white;
+    background: hsl(300, 69%, 71%);
+}
+
+
+
+footer{
+    grid-area: footer;
+    justify-self: end;
+}
+
+footer i{
+    width: 40px;
+    height: 40px;
+    padding: 12px 12px 12px 10px;
+    border-radius: 50%; 
+    border: 1px solid white;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+footer i:hover{
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+
+
+@media (max-width: 1080px){
+    .container{
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 940px){
+    main h1{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px){
+    body{
+        background-image: url("images/bg-mobile.svg");
+    }
+    header img{
+        max-width: 150px;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    main .mockup img{
+        max-width: 300px;
+    }
+    main .register{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+    main .register button{
+        width: 50%;
+        padding: 12px;
+    }
+    footer{
+        justify-self: center;
+    }
+    footer i+i{
+        margin-left: 10px;
+    }
+}
